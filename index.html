@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <title>Group 20</title>
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel='stylesheet prefetch' href='http://storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css'>
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700'>
+  <link rel="stylesheet" href="css/style.css">
+  <script src='http://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js'></script>
+</head>
+
+<body background="img/log_in.jpg">
+  <div id="loginModal" class="mdl-layout mdl-js-layout" role="dialog" aria-hidden="true">
+    <main id="login" class="mdl-layout__content">
+      <div class="mdl-card mdl-shadow--6dp">
+        <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+          <h2 class="mdl-card__title-text">Log in</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+
+          <form method="POST" action="login/login2.php">
+            <div class="mdl-textfield mdl-js-textfield">
+              <input type="text" name="username" class="mdl-textfield__input" id="Username">
+              <label class="mdl-textfield__label" for="username">Username</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input type="password" name = "password" class="mdl-textfield__input" id="Password">
+              <label class="mdl-textfield__label" for="userpass">Password</label>
+            </div>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <input class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" type = "submit" value = "Submit"/>
+          </form>
+          <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="window.location.href='register/register.html'">Register</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
